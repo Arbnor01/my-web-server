@@ -12,5 +12,11 @@ class Application < Sinatra::Base
   get '/names' do
     return "Julia, Mary, Karim"
   end
+
+  post '/sort-names' do
+    names = params[:names].split(',')
+    sorted_names = names.sort.join(',')
+    sorted_names
+  end
 end
 
