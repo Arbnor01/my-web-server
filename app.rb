@@ -8,5 +8,9 @@ class Application < Sinatra::Base
     
     "Thanks Arbnor, you sent this message: \"#{"Hello world"}\""
   end
+
+  get '/names' do
+    return "Julia, Mary, Karim"
+  end
 end
 
